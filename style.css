@@ -1,12 +1,8 @@
-/* ================= BASE ================= */
-
 body{
     margin: 0;
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-/* ================= SIDEBAR ================= */
 
 .sidebar{
     position: fixed;
@@ -36,7 +32,6 @@ hr{
     margin-left: 70px;
 }
 
-/* ✅ FIXED ICON DEFAULT */
 i{
     margin-right: 6px;
 }
@@ -62,8 +57,6 @@ a{
     font-size: large;
 }
 
-/* ================= MAIN AREAS ================= */
-
 .dash,
 .user,
 .table,
@@ -73,8 +66,6 @@ a{
   margin-left: 330px;
   background-color: rgba(235, 235, 235, 0.6);
 }
-
-/* ================= HEADER ================= */
 
 .header{
     display: flex;
@@ -101,8 +92,6 @@ a{
     cursor: pointer;
 }
 
-/* ================= TOP CARDS ================= */
-
 .update{
     display: flex;
     gap: 25px;
@@ -123,13 +112,10 @@ a{
     transition: 0.25s ease;
 }
 
-/* ✅ subtle professional hover */
 .space:hover{
     transform: translateY(-3px);
     box-shadow: 0 10px 22px rgba(0,0,0,0.08);
 }
-
-/* ===== text styles ===== */
 
 .uspa,
 .reve,
@@ -147,14 +133,10 @@ a{
     opacity: 0.85;
 }
 
-/* ===== divider inside card ===== */
-
 .space hr{
     width: 100%;
     margin: 6px 0;
 }
-
-/* ================= FIX ICON + TEXT ALIGNMENT ================= */
 
 .get,
 .last,
@@ -170,8 +152,6 @@ a{
 .get{
     color: rgb(225, 32, 206);
 }
-
-/* ================= GRAPH CARDS ================= */
 
 .box{
     display: flex;
@@ -219,10 +199,6 @@ a{
   background-color: rgba(225, 6, 6, 0.85);
   border: 2px solid rgba(175, 4, 4, 0.9);
 }
-
-
-
-/* ================= USER PROFILE ================= */
 
 .user_profile{
     font-size: xx-large;
@@ -284,10 +260,6 @@ a{
 .pro_btn{
     margin-left: 540px;
 }
-
-/* ================= TABLE LIST ================= */
-
-/* table list */
 
 .his{
     font-weight: 600;
@@ -383,8 +355,6 @@ a{
     border: 1px solid rgb(150, 0, 150);
     border-radius: 3px;
 }
-
-/* notifications */
 
 .limit {
   display: flex;
