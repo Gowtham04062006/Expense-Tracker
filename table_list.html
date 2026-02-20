@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table List</title>
-    <link rel="stylesheet" href="Expense_tracker.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
     <div class="mainbox">
         <div class="sidebar">
             <h2 class="h">Expense Tracker</h2><hr>
@@ -18,17 +17,14 @@
             <a href="notifications.html" class="side nav-item"><i class="fa-solid fa-bell"></i><span>Notifications</span></a>
         </div>
     </div>
-
     <div class="table">
         <p class="his">Expense history</p>
         <p class="his">Track and manage your expenses</p>
-
         <div class="exp_box">
             <div class="tol_exp"><p>Total Expenses</p><b id="totalExp">₹0</b></div>
             <div class="mon_exp"><p>This Month</p><b id="monthExp">₹0</b></div>
             <div class="rem_bud"><p>Remaining Budget</p><b id="remainBud">₹0</b></div>
         </div>
-
         <table class="exp_tab">
             <thead>
                 <tr>
@@ -40,16 +36,14 @@
                 </tr>
             </thead>
             <tbody id="expenseBody">
-                <!-- ✅ rows will come from localStorage -->
             </tbody>
         </table>
         <button class="table_add" onclick="addExpense()">Add</button>
     </div>
-
-    <script src="Expense_tracker.js"></script>
+    <script src="script.js"></script>
     <footer class="site-footer">
   <p>Developed by Leela Gowtham</p>
 </footer>
-</footer>a
+</footer>
 </body>
 </html>
