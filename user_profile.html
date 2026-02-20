@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>User Profile</title>
-  <link rel="stylesheet" href="Expense_tracker.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -17,23 +17,18 @@
       <a href="notifications.html" class="side nav-item"><i class="fa-solid fa-bell"></i><span>Notifications</span></a>
     </div>
   </div>
-
   <div class="user">
     <div class="user_profile">
       <p>User profile</p>
     </div>
-
     <div class="details">
       <div class="det">
-
         <p><b>Name : </b>
           <input type="text" class="user_name" disabled>
         </p>
-
         <p><b>Email Id : </b>
           <span class="user_email"></span>
         </p>
-
         <p><b>Country : </b>
           <select class="user_country" disabled>
                 <option value="">Select Country</option>
@@ -68,9 +63,7 @@
                 <option>Switzerland</option>
                 <option>New Zealand</option>
             </select>
-
         </p>
-
         <p><b>Currency Selector : </b>
           <select class="user_curr" disabled>
             <option value="">Select Currency</option>
@@ -86,23 +79,19 @@
             <option value="AED">AED</option>
             <option value="SAR">SAR</option>
           </select>
-
         </p>
-
         <p><b>Monthly Budget : </b>
           <input type="number" class="user_budget" disabled>
         </p>
         <br>
         <button class="edit_profile" onclick="enableEdit()">Edit Profile</button>
         <button class="edit_profile" onclick="saveEdit()">Save</button>
-
       </div>
     </div>
     <br>
     <button class="logout" onclick="logoutUser()">Logout</button>
   </div>
-
-  <script src="Expense_tracker.js"></script>
+  <script src="script.js"></script>
   <footer class="site-footer">
   <p>Developed by Leela Gowtham</p>
 </footer>
