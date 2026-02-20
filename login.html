@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="lo_reg.css">
+</head>
+<body>
+    <div class="login_page">
+        <h3>Expense Tracker</h3>
+        <hr>
+
+        <!-- ✅ form submit disabled -->
+        <form class="form" onsubmit="return false;">
+            Email :
+            <input type="email" id="email" placeholder="Enter email"><br>
+
+            Password :
+            <input type="password" id="password" placeholder="Enter password"><br>
+
+            <input type="button" id="log_but" value="Login" onclick="loginUser()">
+
+            <a href="forgot_password.html">Forgot Password?</a>
+
+            <p>New user? <a href="register.html">Register</a></p>
+        </form>
+    </div>
+
+    <script src="Expense_tracker.js"></script>
+    <footer class="site-footer">
+  <p>Developed by Leela Gowtham</p>
+</footer>
+</body>
+</html>

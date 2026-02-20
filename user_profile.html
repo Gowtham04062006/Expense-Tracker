@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="Expense_tracker.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="mainbox">
+    <div class="sidebar">
+      <h2 class="h">Expense Tracker</h2><hr>
+      <a href="dashboard.html" class="side nav-item"><i class="fas fa-chart-pie"></i><span>Dashboard</span></a>
+      <a href="user_profile.html" class="side nav-item"><i class="fas fa-user"></i><span>User Profile</span></a>
+      <a href="table_list.html" class="side nav-item"><i class="fa-regular fa-clipboard"></i><span>Table List</span></a>
+      <a href="notifications.html" class="side nav-item"><i class="fa-solid fa-bell"></i><span>Notifications</span></a>
+    </div>
+  </div>
+
+  <div class="user">
+    <div class="user_profile">
+      <p>User profile</p>
+    </div>
+
+    <div class="details">
+      <div class="det">
+
+        <p><b>Name : </b>
+          <input type="text" class="user_name" disabled>
+        </p>
+
+        <p><b>Email Id : </b>
+          <span class="user_email"></span>
+        </p>
+
+        <p><b>Country : </b>
+          <select class="user_country" disabled>
+                <option value="">Select Country</option>
+                <option>India</option>
+                <option>United States</option>
+                <option>United Kingdom</option>
+                <option>Canada</option>
+                <option>Australia</option>
+                <option>Germany</option>
+                <option>France</option>
+                <option>Italy</option>
+                <option>Spain</option>
+                <option>China</option>
+                <option>Japan</option>
+                <option>South Korea</option>
+                <option>Brazil</option>
+                <option>Mexico</option>
+                <option>Russia</option>
+                <option>South Africa</option>
+                <option>Singapore</option>
+                <option>UAE</option>
+                <option>Saudi Arabia</option>
+                <option>Indonesia</option>
+                <option>Malaysia</option>
+                <option>Thailand</option>
+                <option>Vietnam</option>
+                <option>Philippines</option>
+                <option>Netherlands</option>
+                <option>Sweden</option>
+                <option>Norway</option>
+                <option>Denmark</option>
+                <option>Switzerland</option>
+                <option>New Zealand</option>
+            </select>
+
+        </p>
+
+        <p><b>Currency Selector : </b>
+          <select class="user_curr" disabled>
+            <option value="">Select Currency</option>
+            <option value="INR">₹ INR</option>
+            <option value="USD">$ USD</option>
+            <option value="EUR">€ EUR</option>
+            <option value="GBP">£ GBP</option>
+            <option value="JPY">¥ JPY</option>
+            <option value="CNY">¥ CNY</option>
+            <option value="AUD">$ AUD</option>
+            <option value="CAD">$ CAD</option>
+            <option value="SGD">$ SGD</option>
+            <option value="AED">AED</option>
+            <option value="SAR">SAR</option>
+          </select>
+
+        </p>
+
+        <p><b>Monthly Budget : </b>
+          <input type="number" class="user_budget" disabled>
+        </p>
+        <br>
+        <button class="edit_profile" onclick="enableEdit()">Edit Profile</button>
+        <button class="edit_profile" onclick="saveEdit()">Save</button>
+
+      </div>
+    </div>
+    <br>
+    <button class="logout" onclick="logoutUser()">Logout</button>
+  </div>
+
+  <script src="Expense_tracker.js"></script>
+  <footer class="site-footer">
+  <p>Developed by Leela Gowtham</p>
+</footer>
+</body>
+</html>

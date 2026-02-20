@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Details Page</title>
+  <link rel="stylesheet" href="lo_reg.css">
+</head>
+<body>
+  <form id="details">
+    <h3>Enter your details</h3>
+    <hr>
+    <label>Full Name :</label>
+    <input type="text" id="det_name" placeholder="Enter your full name">
+    <br><br>
+    <label>Email :</label>
+    <input type="text" id="det_email" readonly>
+    <br><br>
+    <label>Country :</label>
+    <select id="det_country">
+      <option value="">Select Country</option>
+      <option>India</option>
+      <option>United States</option>
+      <option>United Kingdom</option>
+      <option>Canada</option>
+      <option>Australia</option>
+      <option>Germany</option>
+      <option>France</option>
+      <option>Italy</option>
+      <option>Spain</option>
+      <option>China</option>
+      <option>Japan</option>
+      <option>South Korea</option>
+      <option>Brazil</option>
+      <option>Mexico</option>
+      <option>Russia</option>
+      <option>South Africa</option>
+      <option>Singapore</option>
+      <option>UAE</option>
+      <option>Saudi Arabia</option>
+      <option>Indonesia</option>
+      <option>Malaysia</option>
+      <option>Thailand</option>
+      <option>Vietnam</option>
+      <option>Philippines</option>
+      <option>Netherlands</option>
+      <option>Sweden</option>
+      <option>Norway</option>
+      <option>Denmark</option>
+      <option>Switzerland</option>
+      <option>New Zealand</option>
+    </select>
+    <br><br>
+    <label>Currency :</label>
+    <select id="det_cur">
+      <option value="">Select Currency</option>
+      <option value="INR">₹ INR</option>
+      <option value="USD">$ USD</option>
+      <option value="EUR">€ EUR</option>
+      <option value="GBP">£ GBP</option>
+      <option value="JPY">¥ JPY</option>
+      <option value="CNY">¥ CNY</option>
+      <option value="AUD">$ AUD</option>
+      <option value="CAD">$ CAD</option>
+      <option value="SGD">$ SGD</option>
+      <option value="AED">AED</option>
+      <option value="SAR">SAR</option>
+    </select>
+    <br><br>
+    <label>Monthly Budget :</label>
+    <input type="number" id="det_mon" placeholder="Enter your budget">
+    <br><br>
+    <button type="button" id="det_sub">Save</button>
+  </form>
+  <script src="Expense_tracker.js"></script>
+  <footer class="site-footer">
+  <p>Developed by Leela Gowtham</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="Expense_tracker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="mainbox">
+        <div class="sidebar">
+            <h2 class="h">Expense Tracker</h2><hr>
+            <a href="dashboard.html" class="side nav-item"><i class="fas fa-chart-pie"></i><span>Dashboard</span></a>
+            <a href="user_profile.html" class="side nav-item"><i class="fas fa-user"></i><span>User Profile</span></a>
+            <a href="table_list.html" class="side nav-item"><i class="fa-regular fa-clipboard"></i><span>Table List</span></a>
+            <a href="notifications.html" class="side nav-item"><i class="fa-solid fa-bell"></i><span>Notifications</span></a>
+        </div>
+    </div>
+    <div class="not">
+        <p class="his">Notifications</p>
+        <p class="his">Stay updated with your expense alerts</p>
+        <div class="limit">
+            <div class="lim_budget">
+                <div class="not-head"><span class="dot red">🔴</span><b>Budget Limit Reached</b></div>
+                <p class="lim_bud_per">You have used 90% of your monthly budget.</p>
+                <p class="budget_time">—</p>
+            </div>
+            <div class="lar_exp">
+                <div class="not-head"><span class="dot yellow">🟡</span><b>Large Expense Alert</b></div>
+                <p class="shopping">You spent ₹2000 on Shopping.</p>
+                <p class="shopping_time">—</p>
+            </div>
+            <div class="mon_sum">
+                <div class="not-head"><span class="dot green">🟢</span><b>Monthly Summary</b></div>
+                <p class="saved">You saved ₹500 this month.</p>
+                <p class="saved_time">—</p>
+            </div>
+        </div>
+    </div>
+    <script src="Expense_tracker.js"></script>
+    <footer class="site-footer">
+  <p>Developed by Leela Gowtham</p>
+</footer>
+</body>
+</html>

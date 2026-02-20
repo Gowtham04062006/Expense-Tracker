@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="Expense_tracker.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+  <div class="mainbox">
+    <div class="sidebar">
+      <h2 class="h">Expense Tracker</h2><hr>
+      <a href="dashboard.html" class="side nav-item"><i class="fas fa-chart-pie"></i><span>Dashboard</span></a>
+      <a href="user_profile.html" class="side nav-item"><i class="fas fa-user"></i><span>User Profile</span></a>
+      <a href="table_list.html" class="side nav-item"><i class="fa-regular fa-clipboard"></i><span>Table List</span></a>
+      <a href="notifications.html" class="side nav-item"><i class="fa-solid fa-bell"></i><span>Notifications</span></a>
+    </div>
+  </div>
+
+  <!-- Main Dashboard -->
+  <div class="dash">
+
+    <!-- ✅ PROFESSIONAL HEADER -->
+    <div class="header">
+      <p class="ma">Expense Dashboard</p>
+    </div>
+
+    <!-- ===== TOP CARDS ===== -->
+    <div class="main">
+      <div class="update">
+
+        <!-- Monthly Budget -->
+        <div class="space">
+          <p class="uspa">Monthly Budget</p>
+          <h3 id="monthlyBudget">₹0</h3>
+          <hr>
+          <p class="get"><i class="fa-solid fa-triangle-exclamation"></i><span>Budget Limit</span></p>
+        </div>
+
+        <!-- Total Expenses -->
+        <div class="space">
+          <p class="reve">Total Expenses</p>
+          <h3 class="dol" id="totalExpenses">₹0</h3>
+          <hr>
+          <p class="last"><i class="fa-solid fa-calculator"></i>Calculated</p>
+        </div>
+
+        <!-- Total Transactions -->
+        <div class="space">
+          <p class="uspa">Total Transactions</p>
+          <h3 class="no" id="totalTransactions">0</h3>
+          <hr>
+          <p class="fix"><i class="fa-solid fa-list"></i>From Expense List</p>
+        </div>
+
+        <!-- Remaining Budget -->
+        <div class="space">
+          <p class="fol">Remaining Budget</p>
+          <h3 class="foll" id="remainingBudget">₹0</h3>
+          <hr>
+          <p class="fix"><i class="fa-solid fa-arrow-rotate-right"></i>Auto Updated</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===== GRAPH CARDS ===== -->
+    <div class="box">
+
+      <!-- Weekly -->
+      <div class="sales">
+        <div class="card-graph green">
+          <canvas id="dailyChart"></canvas>
+        </div>
+
+        <p class="sa">Weekly Expenses</p>
+        <p class="per">
+          <span class="cam">Based on your data</span>
+        </p>
+        <hr>
+        <p class="ago"><i class="fas fa-rotate-right"></i>live data</p>
+      </div>
+
+      <!-- Monthly -->
+      <div class="sub">
+        <div class="card-graph orange">
+          <canvas id="emailsub"></canvas>
+        </div>
+
+        <p class="em">Monthly Expenses</p>
+        <p class="cam">Calculated from entries</p>
+        <hr>
+        <p class="ago"><i class="fas fa-rotate-right"></i>live data</p>
+      </div>
+
+      <!-- Trend -->
+      <div class="task">
+        <div class="card-graph red">
+          <canvas id="comtasks"></canvas>
+        </div>
+
+        <p class="sa">Expense Trend</p>
+        <p class="cam">Based on your activity</p>
+        <hr>
+        <p class="ago"><i class="fas fa-rotate-right"></i>live data</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="Expense_tracker.js"></script>
+  <footer class="site-footer">
+  <p>Developed by Leela Gowtham</p>
+</footer>
+</body>
+</html>
