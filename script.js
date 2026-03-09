@@ -580,3 +580,16 @@ document.addEventListener("keydown", function (e) {
     }
   }
 });
+
+function togglePassword() {
+
+let pass = document.getElementById("fp_pass");
+
+if(pass.type === "password"){
+pass.type = "text";
+}
+else{
+pass.type = "password";
+}
+
+}
