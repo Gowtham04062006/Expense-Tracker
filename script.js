@@ -581,15 +581,20 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-function togglePassword() {
+function togglePassword(){
 
-let pass = document.getElementById("fp_pass");
+let pass = document.getElementById("password");
+let icon = document.querySelector(".eye i");
 
 if(pass.type === "password"){
 pass.type = "text";
+icon.classList.remove("fa-eye");
+icon.classList.add("fa-eye-slash");
 }
 else{
 pass.type = "password";
+icon.classList.remove("fa-eye-slash");
+icon.classList.add("fa-eye");
 }
 
 }
