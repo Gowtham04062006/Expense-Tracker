@@ -260,6 +260,7 @@ font-weight: 600;
 .password-container{
 position: relative;
 width: 100%;
+margin-left: 15px;
 }
 
 .password-container input{
