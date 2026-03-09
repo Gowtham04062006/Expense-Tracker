@@ -445,9 +445,13 @@ function renderExpenses() {
 
 function addExpense() {
   const date = prompt("Enter date (DD-MM-YYYY):");
+  if (date === null) return;
   const category = prompt("Enter category:");
+  if (category === null) return;
   const desc = prompt("Enter description:");
+  if (desc === null) return;
   const amount = prompt("Enter amount:");
+  if (amount === null) return;
   if (!date || !category || !desc || !amount) {
     alert("All fields required!");
     return;
