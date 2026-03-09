@@ -4,12 +4,6 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$/;
 
-document.addEventListener("keydown", function(event) {
-    if (event.key === "Enter") {
-        addExpense();
-    }
-});
-
 function getExpenses() {
   const email = localStorage.getItem("loggedInUser");
   if (!email) return [];
