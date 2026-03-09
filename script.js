@@ -581,20 +581,21 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-function togglePassword(){
+function togglePassword(icon){
 
-let pass = document.getElementById("password");
-let icon = document.querySelector(".eye i");
+let container = icon.parentElement;
+let pass = container.querySelector("input");
+let eyeIcon = icon.querySelector("i");
 
 if(pass.type === "password"){
 pass.type = "text";
-icon.classList.remove("fa-eye");
-icon.classList.add("fa-eye-slash");
+eyeIcon.classList.remove("fa-eye");
+eyeIcon.classList.add("fa-eye-slash");
 }
 else{
 pass.type = "password";
-icon.classList.remove("fa-eye-slash");
-icon.classList.add("fa-eye");
+eyeIcon.classList.remove("fa-eye-slash");
+eyeIcon.classList.add("fa-eye");
 }
 
 }
