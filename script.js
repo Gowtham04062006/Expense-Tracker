@@ -581,21 +581,19 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-function togglePassword(icon){
-
-let container = icon.parentElement;
+function togglePassword(eye){
+let container = eye.closest(".password-container");
 let pass = container.querySelector("input");
-let eyeIcon = icon.querySelector("i");
+let icon = eye.querySelector("i");
 
 if(pass.type === "password"){
 pass.type = "text";
-eyeIcon.classList.remove("fa-eye");
-eyeIcon.classList.add("fa-eye-slash");
+icon.classList.remove("fa-eye");
+icon.classList.add("fa-eye-slash");
 }
 else{
 pass.type = "password";
-eyeIcon.classList.remove("fa-eye-slash");
-eyeIcon.classList.add("fa-eye");
+icon.classList.remove("fa-eye-slash");
+icon.classList.add("fa-eye");
 }
-
 }
