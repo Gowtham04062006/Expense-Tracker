@@ -279,4 +279,5 @@ transform: translateY(-50%);
 cursor: pointer;
 font-size: 18px;
 background: transparent;
+opacity: 0.5;
 }
