@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History</title>
+
+  <link rel="stylesheet" href="Expense_tracker.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+<h2 class="mobile-title">Expense Tracker</h2>
+<div class="mainbox">
+  <div class="sidebar">
+    <h2 class="h">Expense Tracker</h2><hr>
+
+<a href="dashboard.html" class="side nav-item">
+  <i class="fas fa-chart-pie"></i><span>Dashboard</span>
+</a>
+
+<a href="user_profile.html" class="side nav-item">
+  <i class="fas fa-user"></i><span>User Profile</span>
+</a>
+
+<a href="table_list.html" class="side nav-item"><i class="fa-regular fa-clipboard"></i><span>Add</span></a>
+      <a href="history.html" class="side nav-item"><i class="fa-solid fa-clock-rotate-left"></i><span>Report</span></a>
+
+<a href="notifications.html" class="side nav-item">
+  <i class="fa-solid fa-bell"></i><span>Notifications</span>
+</a>
+
+  </div>
+</div>
+
+<div class="table">
+  <p class="his">View and filter your past expenses</p>
+  <div class="filter-box">
+
+    <div>
+  <label><b>Date: </b></label>
+  <input type="date" id="dateFilter" style="padding:6px; border-radius:6px;">
+</div>
+<div>
+  <label><b>Day: </b></label>
+  <select id="dayFilter" style="padding:6px; border-radius:6px;">
+    <option value="all">All</option>
+    <option value="0">Sunday</option>
+    <option value="1">Monday</option>
+    <option value="2">Tuesday</option>
+    <option value="3">Wednesday</option>
+    <option value="4">Thursday</option>
+    <option value="5">Friday</option>
+    <option value="6">Saturday</option>
+  </select>
+</div>
+<div>
+  <label><b>Week: </b></label>
+  <select id="weekFilter" style="padding:6px; border-radius:6px;">
+    <option value="all">All</option>
+    <option value="1">Week 1</option>
+    <option value="2">Week 2</option>
+    <option value="3">Week 3</option>
+    <option value="4">Week 4</option>
+    <option value="5">Week 5</option>
+  </select>
+</div>
+<div>
+  <label><b>Month: </b></label>
+  <select id="monthFilter" style="padding:6px; border-radius:6px;">
+    <option value="all">All</option>
+    <option value="0">Jan</option>
+    <option value="1">Feb</option>
+    <option value="2">Mar</option>
+    <option value="3">Apr</option>
+    <option value="4">May</option>
+    <option value="5">Jun</option>
+    <option value="6">Jul</option>
+    <option value="7">Aug</option>
+    <option value="8">Sep</option>
+    <option value="9">Oct</option>
+    <option value="10">Nov</option>
+    <option value="11">Dec</option>
+  </select>
+</div>
+<div>
+  <label><b>Year: </b></label>
+  <select id="yearFilter" style="padding:6px; border-radius:6px;">
+    <option value="all">All</option>
+  </select>
+</div>
+
+  </div>
+
+  <p id="selectedMonth" class="his"></p>
+
+  <table class="exp_tab">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Amount</th>
+        <th>Person</th>
+      </tr>
+    </thead>
+    <tbody id="historyBody"></tbody>
+  </table>
+
+  <p id="historyTotal" class="his"></p>
+  <button onclick="exportToExcel()" 
+        style="margin-left:25px; margin-top:10px; padding:8px 14px; border:none; border-radius:6px; background:#4CAF50; color:white; cursor:pointer;">
+  ⬇ Download Excel
+</button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script type="module" src="Expense_tracker.js"></script>
+
+</body>
+</html>
+

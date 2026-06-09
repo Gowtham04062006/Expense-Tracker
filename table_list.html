@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table List</title>
+    <link rel="stylesheet" href="Expense_tracker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<h2 class="mobile-title">Expense Tracker</h2>
+<div class="mainbox">
+    <div class="sidebar">
+        <h2 class="h">Expense Tracker</h2><hr>
+        <a href="dashboard.html" class="side nav-item"><i class="fas fa-chart-pie"></i><span>Dashboard</span></a>
+        <a href="user_profile.html" class="side nav-item"><i class="fas fa-user"></i><span>User Profile</span></a>
+        <a href="table_list.html" class="side nav-item"><i class="fa-regular fa-clipboard"></i><span>Add</span></a>
+      <a href="history.html" class="side nav-item"><i class="fa-solid fa-clock-rotate-left"></i><span>Report</span></a>
+        <a href="notifications.html" class="side nav-item"><i class="fa-solid fa-bell"></i><span>Notifications</span></a>
+    </div>
+</div>
+
+<div class="table">
+
+<p class="his">Expense history</p>
+<p class="his">Track and manage your expenses</p>
+
+<div class="exp_box">
+    <div class="tol_exp"><p>Total Expenses</p><b id="totalExp">₹0</b></div>
+    <div class="mon_exp"><p>This Month</p><b id="monthExp">₹0</b></div>
+    <div class="rem_bud"><p>Remaining Budget</p><b id="remainBud">₹0</b></div>
+</div>
+
+<div id="expenseForm" style="display:none; margin:20px; background:white; padding:15px; border-radius:8px; width:300px; box-shadow:0 4px 12px rgba(0,0,0,0.2);">
+
+    <input type="date" id="dateInput" class="auth-input"><br><br>
+    <select id="catInput" class="auth-input" onchange="handleCategoryChange()">
+        <option value="">Select Category</option>
+        <option>Food</option>
+        <option>Travel</option>
+        <option>Shopping</option>
+        <option>Bills</option>
+        <option>Entertainment</option>
+        <option>Health</option>
+        <option>Groceries</option>
+        <option>Other</option>
+    </select><br><br>
+
+    <input type="text" id="newCategoryInput" 
+           placeholder="Enter category"
+           class="auth-input" style="display:none;"><br>
+
+    <input type="text" id="descInput" placeholder="Description" class="auth-input"><br><br>
+
+
+    <input type="number" id="amtInput" placeholder="Amount" class="auth-input"><br><br>
+
+    <select id="personSelect" class="auth-input" onchange="handlePersonChange()">
+        <option value="self">Self</option>
+        <option value="add_new">➕ Add Person</option>
+    </select><br><br>
+
+    <input type="text" id="newPersonInput" 
+           placeholder="Enter person name"
+           class="auth-input" style="display:none;"><br><br>
+
+    <button onclick="saveExpense()" class="auth-btn">Save</button>
+</div>
+
+<table class="exp_tab">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Person</th>
+            <th class="action">Action</th>
+        </tr>
+    </thead>
+    <tbody id="expenseBody"></tbody>
+</table>
+
+<button class="table_add" onclick="showForm()">Add</button>
+
+</div>
+
+<script type="module" src="Expense_tracker.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="lo_reg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="login_page">
+        <h3>Expense Tracker</h3>
+        <hr>
+        <form class="form" onsubmit="return false;">
+            Email :
+            <input type="email" id="email" placeholder="Enter email"><br>
+            Password :
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Enter password">
+                <span class="eye" onclick="togglePassword(this)"><i class="fa-regular fa-eye"></i></span>
+            </div>
+            <input type="button" id="log_but" value="Login" onclick="loginUser()">
+            <a href="forgot_password.html">Forgot Password?</a>
+            <p>New user? <a href="register.html">Register</a></p>
+        </form>
+    </div>
+    <script type="module" src="Expense_tracker.js"></script>
+</body>
+</html>
