@@ -1,4 +1,4 @@
-# 💰 Expense Tracker Application (MERN Stack)
+# 💰 Expense Tracker Application
 
 A full-stack expense management application that helps users track daily expenses, manage budgets, monitor spending habits, and maintain financial records through a clean and responsive user interface.
 
