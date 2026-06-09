@@ -298,7 +298,7 @@ http://localhost:5173
 
 # Contributors
 
-- Botcha Kulkadeep
+- G.Leela Gowtham
 - Project Team Members
 
 ---
